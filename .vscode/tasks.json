@@ -1,0 +1,48 @@
+// See https://go.microsoft.com/fwlink/?LinkId=733558
+// for the documentation about the tasks.json format
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Webpack Development: Client",
+			"command": "pnpm",
+			"args": [
+				"run",
+				"watch"
+			],
+			"group": "build",
+			"problemMatcher": "$ts-webpack-watch",
+			"icon": {
+				"id": "archive",
+				"color": "terminal.ansiRed"
+			},
+			"isBackground": true
+		},
+		{
+			"label": "Webpack Development: Server",
+			"command": "pnpm",
+			"args": [
+				"run",
+				"server:watch"
+			],
+			"group": "build",
+			"problemMatcher": "$ts-webpack-watch",
+			"icon": {
+				"id": "archive",
+				"color": "terminal.ansiRed"
+			},
+			"isBackground": true
+		},
+		{
+			"label": "Webpack Development",
+			"dependsOn": [
+				"Webpack Development: Client",
+				"Webpack Development: Server"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+	]
+}

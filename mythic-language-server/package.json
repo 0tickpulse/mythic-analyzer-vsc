@@ -1,0 +1,12 @@
+{
+    "name": "mythic-language-server",
+    "main": "dist/index.js",
+    "scripts": {
+        "compile": "webpack"
+    },
+    "author": "0tickpulse",
+    "license": "AGPL-3.0-or-later",
+    "dependencies": {
+        "vscode-languageserver": "^9.0.1"
+    }
+}
