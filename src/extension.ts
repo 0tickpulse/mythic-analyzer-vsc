@@ -15,7 +15,7 @@ export function activate(context: vscode.ExtensionContext) {
         Node Version: ${process.version}
         File: ${__filename}`);
     console.log(`Attempting to start server from '${serverModule}'...`);
-    const debugOptions: ForkOptions = { execArgv: ["--nolazy", "--inspect=6009"] };
+    const debugOptions: ForkOptions = { execArgv: ["--nolazy", "--inspect-brk=6009"] };
     const serverOptions: ServerOptions = {
         run: {
             module: serverModule,
