@@ -18,6 +18,7 @@
   - [🎉 Current](#-current)
     - [YAML Validation](#yaml-validation)
     - [Simple Autocompletion](#simple-autocompletion)
+- [⚠️ Limitations](#️-limitations)
 - [📝 License](#-license)
 - [❤️ Credits and Acknowledgements](#️-credits-and-acknowledgements)
 
@@ -44,6 +45,13 @@ The extension provides simple autocompletion for things like keys and enum value
 
 ![YAML Keys Autocompletion Example](./media/yaml_key_autocompletion.png)
 ![YAML Enum Autocompletion Example](./media/yaml_enum_autocompletion.png)
+
+## ⚠️ Limitations
+
+The extension is still in beta and may have bugs. Here are some known limitations:
+
+- The extension does not support YAML anchors and aliases.
+- The extension does support Mythic submapping, where a key can be written like `A.B.C` instead of `A: { B: { C: ... } }`. However, this is quite buggy and may not work as expected.
 
 ## 📝 License
 
