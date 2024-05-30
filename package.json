@@ -15,6 +15,10 @@
     ],
     "main": "./dist/extension.js",
     "contributes": {},
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/0tickpulse/mythic-analyzer-vsc.git"
+    },
     "scripts": {
         "vscode:prepublish": "pnpm run package",
         "compile": "webpack",
