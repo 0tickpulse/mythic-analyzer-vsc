@@ -18,6 +18,7 @@
   - [🎉 Current](#-current)
     - [YAML Validation](#yaml-validation)
     - [Simple Autocompletion](#simple-autocompletion)
+    - [NPM Package](#npm-package)
 - [⚠️ Limitations](#️-limitations)
 - [📝 License](#-license)
 - [❤️ Credits and Acknowledgements](#️-credits-and-acknowledgements)
@@ -45,6 +46,16 @@ The extension provides simple autocompletion for things like keys and enum value
 
 ![YAML Keys Autocompletion Example](./media/yaml_key_autocompletion.png)
 ![YAML Enum Autocompletion Example](./media/yaml_enum_autocompletion.png)
+
+#### NPM Package
+
+The extension is also available as an NPM package, which can be found [here](https://www.npmjs.com/package/mythic-analyzer).
+
+```bash
+npm install mythic-analyzer
+```
+
+The package can be used to create custom tools that require MythicMobs configuration analysis.
 
 ## ⚠️ Limitations
 

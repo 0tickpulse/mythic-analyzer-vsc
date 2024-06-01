@@ -1,35 +1,38 @@
 {
     "name": "mythic-analyzer-vsc",
     "displayName": "mythic-analyzer-vsc",
+    "publisher": "0tickpulse",
     "description": "A VSCode extension that uses mythic-analyzer to provide language support for mythic configuration files.",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.83.0"
     },
+    "icon": "media/icon.png",
     "license": "AGPL-3.0-or-later",
     "categories": [
-        "Other"
+        "Linters",
+        "Programming Languages"
     ],
     "activationEvents": [
         "onLanguage:yaml"
     ],
     "main": "./dist/extension.js",
+    "browser": "./dist/extension.js",
     "contributes": {},
     "repository": {
         "type": "git",
         "url": "https://github.com/0tickpulse/mythic-analyzer-vsc.git"
     },
     "scripts": {
-        "vscode:prepublish": "pnpm run package",
         "compile": "webpack",
         "watch": "webpack --watch",
         "server:watch": "cd mythic-language-server && webpack --watch",
-        "package": "webpack --mode production --devtool hidden-source-map",
-        "compile-tests": "tsc -p . --outDir out",
-        "watch-tests": "tsc -p . -w --outDir out",
-        "pretest": "pnpm run compile-tests && pnpm run compile && pnpm run lint",
-        "lint": "eslint src --ext ts",
-        "test": "node ./out/test/runTest.js"
+        "server:compile": "cd mythic-language-server && webpack",
+        "webpack": "webpack --mode production --devtool hidden-source-map",
+        "test": "node ./out/test/runTest.js",
+        "vscode:prepublish": "pnpm run compile && pnpm run server:compile",
+        "package": "pnpm vsce package --no-dependencies",
+        "publish": "pnpm vsce publish --no-dependencies"
     },
     "devDependencies": {
         "@types/mocha": "^10.0.3",
