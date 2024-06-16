@@ -1,27 +1,39 @@
-<div align="center"><h1><img src="./assets/mythicIcon_128x128.png" height=40> Mythic Analyzer</h1></div>
+<div align="center">
+<img src="./assets/mythic_purple_128x.png">
+
+# Mythic Analyzer
+
+</div>
+
+<p align="center">MythicMobs configuration analysis</p>
 
 <div align="center">
     <a href="https://discord.gg/SHthmb6t6n">
-        <img src="https://img.shields.io/static/v1?logo=discord&label=&message=Discord&    color=36393f&style=flat-square" alt="Discord">
+        <img src="https://img.shields.io/badge/Discord-Server?logo=discord&color=36393f&style=flat-square" alt="Discord Link">
     </a>
     <a href="https://github.com/0tickpulse/mythic-analyzer/blob/main/LICENSE">
-        <img src="https://img.shields.io/badge/License-AGPLv3-red?style=flat-square">
+        <img src="https://img.shields.io/badge/License-AGPLv3-red?style=flat-square" alt="License Link">
+    </a>
+    <!-- Marketplace link -->
+    <a href="https://marketplace.visualstudio.com/items?itemName=0tickpulse.mythic-analyzer-vsc">
+        <img src="https://img.shields.io/badge/VS-Marketplace-0164b7?logo=visualstudiocode&style=flat-square" alt="VSCode Marketplace Link">
     </a>
 </div>
 
-<p align="center">A Visual Studio Code extension that adds language support for MythicMobs configurations.</p>
+---
 
 ## 📖 Table of Contents
 
-- [📖 Table of Contents](#-table-of-contents)
-- [🚀 Features](#-features)
-  - [🎉 Current](#-current)
-    - [YAML Validation](#yaml-validation)
-    - [Simple Autocompletion](#simple-autocompletion)
-    - [NPM Package](#npm-package)
-- [⚠️ Limitations](#️-limitations)
-- [📝 License](#-license)
-- [❤️ Credits and Acknowledgements](#️-credits-and-acknowledgements)
+- [Mythic Analyzer](#mythic-analyzer)
+  - [📖 Table of Contents](#-table-of-contents)
+  - [🚀 Features](#-features)
+    - [🎉 Current](#-current)
+      - [YAML Validation](#yaml-validation)
+      - [Simple Autocompletion](#simple-autocompletion)
+      - [NPM Package/API](#npm-packageapi)
+  - [⚠️ Limitations](#️-limitations)
+  - [📝 License](#-license)
+  - [❤️ Credits and Acknowledgements](#️-credits-and-acknowledgements)
 
 ## 🚀 Features
 
@@ -38,24 +50,24 @@
 The extension provides YAML validation for MythicMobs configurations.
 This makes it easier to spot typos and other mistakes in your configuration files.
 
-![YAML Validation Example](./media/yaml_erroring.png)
+![YAML Validation Example](./assets/yaml_erroring.png)
 
 #### Simple Autocompletion
 
 The extension provides simple autocompletion for things like keys and enum values.
 
-![YAML Keys Autocompletion Example](./media/yaml_key_autocompletion.png)
-![YAML Enum Autocompletion Example](./media/yaml_enum_autocompletion.png)
+![YAML Keys Autocompletion Example](./assets/yaml_key_autocompletion.png)
+![YAML Enum Autocompletion Example](./assets/yaml_enum_autocompletion.png)
 
-#### NPM Package
+#### NPM Package/API
 
 The extension is also available as an NPM package, which can be found [here](https://www.npmjs.com/package/mythic-analyzer).
 
 ```bash
-npm install mythic-analyzer
+pnpm install mythic-analyzer
 ```
 
-The package can be used to create custom tools that require MythicMobs configuration analysis.
+The package exposes an API and can be used to create custom tools that require MythicMobs configuration analysis.
 
 ## ⚠️ Limitations
 
