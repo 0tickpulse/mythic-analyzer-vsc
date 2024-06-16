@@ -7,7 +7,7 @@
     "engines": {
         "vscode": "^1.83.0"
     },
-    "icon": "media/icon.png",
+    "icon": "assets/mythic_purple_128x.png",
     "license": "AGPL-3.0-or-later",
     "categories": [
         "Linters",
@@ -18,7 +18,16 @@
     ],
     "main": "./dist/extension.js",
     "browser": "./dist/extension.js",
-    "contributes": {},
+    "contributes": {
+        "commands": [
+            {
+                "command": "mythic-analyzer-vsc.restartServer",
+                "title": "Mythic Analyzer: Restart Language Server",
+                "shortTitle": "Mythic Analyzer: Restart",
+                "category": "Mythic Analyzer"
+            }
+        ]
+    },
     "repository": {
         "type": "git",
         "url": "https://github.com/0tickpulse/mythic-analyzer-vsc.git"

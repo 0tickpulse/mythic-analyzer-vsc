@@ -36,6 +36,12 @@ export function activate(context: vscode.ExtensionContext) {
         ],
     };
 
+    context.subscriptions.push(
+        vscode.commands.registerCommand("mythic-analyzer-vsc.restartServer", () => {
+            client.stop().then(() => client.start());
+        }),
+    );
+
     const status = vscode.window.createStatusBarItem();
     fullParseDefaultStatus(status);
     status.show();
