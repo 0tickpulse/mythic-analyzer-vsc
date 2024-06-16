@@ -3,7 +3,7 @@
     "displayName": "mythic-analyzer-vsc",
     "publisher": "0tickpulse",
     "description": "A VSCode extension that uses mythic-analyzer to provide language support for mythic configuration files.",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "engines": {
         "vscode": "^1.83.0"
     },
